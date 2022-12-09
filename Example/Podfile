@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '11.0'
+
+target 'SonaIOSExamples' do
+    
+    pod 'Sona', :path => '../'
+    pod 'Mercury-iOS', :git => 'git@github.com:BixinTech/mercury-ios.git', :branch => 'main'
+  
+    pod 'ZegoLiveRoom',  '6.16.3.25579'
+    pod 'TXLiteAVSDK_Professional', '10.8.12025'
+
+    pod 'Masonry'
+    pod 'YYImage'
+    pod 'Toast', '4.0.0'
+    pod 'AFNetworking', '4.0.1'
+    pod 'MJExtension', '3.4.1'
+    pod 'ReactiveObjC', '3.1.1'
+end

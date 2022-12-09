@@ -1,0 +1,997 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		020BA0A9B0A5EA32C7671D44 /* libPods-SonaIOSExamples.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDDA8AEA7F4871F5131E6502 /* libPods-SonaIOSExamples.a */; };
+		510959B228BE39F100A7F035 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 510959B128BE39F100A7F035 /* AppDelegate.m */; };
+		510959B528BE39F100A7F035 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 510959B428BE39F100A7F035 /* SceneDelegate.m */; };
+		510959B828BE39F100A7F035 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 510959B728BE39F100A7F035 /* ViewController.m */; };
+		510959BB28BE39F100A7F035 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510959B928BE39F100A7F035 /* Main.storyboard */; };
+		510959BD28BE3A0300A7F035 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 510959BC28BE3A0300A7F035 /* Assets.xcassets */; };
+		510959C028BE3A0300A7F035 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510959BE28BE3A0300A7F035 /* LaunchScreen.storyboard */; };
+		510959C328BE3A0300A7F035 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 510959C228BE3A0300A7F035 /* main.m */; };
+		B31E26A3292F9258009D2BF2 /* CRMicOperationHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B31E26A2292F9258009D2BF2 /* CRMicOperationHandler.m */; };
+		B31E26A6292F926B009D2BF2 /* CRPublicScreenMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B31E26A5292F926B009D2BF2 /* CRPublicScreenMessageHandler.m */; };
+		B31E26A9292F9358009D2BF2 /* CRRewardMessageHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = B31E26A8292F9358009D2BF2 /* CRRewardMessageHandler.m */; };
+		B31E26AC292F9681009D2BF2 /* CRMessageHandlerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = B31E26AB292F9681009D2BF2 /* CRMessageHandlerBase.m */; };
+		B3538C5F2934B87100ECF3F3 /* CRGiftRewardTarget.m in Sources */ = {isa = PBXBuildFile; fileRef = B3538C5E2934B87100ECF3F3 /* CRGiftRewardTarget.m */; };
+		B3538C622934D0EA00ECF3F3 /* ChatRoomFullScreenAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3538C612934D0EA00ECF3F3 /* ChatRoomFullScreenAnimationView.m */; };
+		B3538C692934D6BD00ECF3F3 /* gift_reward.apng in Resources */ = {isa = PBXBuildFile; fileRef = B3538C682934D6BD00ECF3F3 /* gift_reward.apng */; };
+		B3538C6C2934D89100ECF3F3 /* ChatRoomGiftImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B3538C6B2934D89100ECF3F3 /* ChatRoomGiftImage.m */; };
+		B399CC902923BE3700DE031B /* CRPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = B399CC8F2923BE3700DE031B /* CRPopupView.m */; };
+		B3E33D292921E15E00C938E7 /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D272921E15E00C938E7 /* ChatRoomViewController.m */; };
+		B3E33D2A2921E15E00C938E7 /* ChatRoomViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E33D282921E15E00C938E7 /* ChatRoomViewController.xib */; };
+		B3E33D2D2921F4C000C938E7 /* CRSeatView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D2C2921F4C000C938E7 /* CRSeatView.m */; };
+		B3E33D3929221FAF00C938E7 /* UIButton+XIB.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D3829221FAF00C938E7 /* UIButton+XIB.m */; };
+		B3E33D3D292235F400C938E7 /* CRRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D3C292235F400C938E7 /* CRRequest.m */; };
+		B3E33D402922363B00C938E7 /* CRRoomListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D3F2922363B00C938E7 /* CRRoomListRequest.m */; };
+		B3E33D432922365600C938E7 /* CRRoomInfoRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D422922365600C938E7 /* CRRoomInfoRequest.m */; };
+		B3E33D462922366800C938E7 /* CRGiftListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D452922366800C938E7 /* CRGiftListRequest.m */; };
+		B3E33D492922367E00C938E7 /* CRGiftRewardRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D482922367E00C938E7 /* CRGiftRewardRequest.m */; };
+		B3E33D4C2922369B00C938E7 /* CRMicOperationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D4B2922369B00C938E7 /* CRMicOperationRequest.m */; };
+		B3E33D502922390400C938E7 /* CRRoomListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D4F2922390400C938E7 /* CRRoomListModel.m */; };
+		B3E33D562922398B00C938E7 /* CRRoomInfoResult.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D552922398B00C938E7 /* CRRoomInfoResult.m */; };
+		B3E33D5929223CC800C938E7 /* CRGiftModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D5829223CC800C938E7 /* CRGiftModel.m */; };
+		B3E33D5E292272B500C938E7 /* ChatRoomListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D5C292272B500C938E7 /* ChatRoomListViewController.m */; };
+		B3E33D5F292272B500C938E7 /* ChatRoomListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E33D5D292272B500C938E7 /* ChatRoomListViewController.xib */; };
+		B3E33D672923358F00C938E7 /* CRUserCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D662923358F00C938E7 /* CRUserCenter.m */; };
+		B3E33D6A29236D1100C938E7 /* CRGiftPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D6929236D1100C938E7 /* CRGiftPanel.m */; };
+		B3E33D6D29236D3500C938E7 /* CRGiftUserListView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D6C29236D3500C938E7 /* CRGiftUserListView.m */; };
+		B3E33D7029236E3200C938E7 /* UIColor+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D6F29236E3200C938E7 /* UIColor+HEX.m */; };
+		B3E33D7329236F4D00C938E7 /* YuerGiftUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D7229236F4D00C938E7 /* YuerGiftUserCell.m */; };
+		B3E33D7B29237A3D00C938E7 /* YuerGiftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D7929237A3D00C938E7 /* YuerGiftCell.m */; };
+		B3E33D7C29237A3D00C938E7 /* CRGiftListView.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E33D7A29237A3D00C938E7 /* CRGiftListView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		510959C928BE3A0300A7F035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510959A528BE39F100A7F035 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 510959AC28BE39F100A7F035;
+			remoteInfo = SonaIOSExamples;
+		};
+		510959D328BE3A0300A7F035 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 510959A528BE39F100A7F035 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 510959AC28BE39F100A7F035;
+			remoteInfo = SonaIOSExamples;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		510959AD28BE39F100A7F035 /* SonaIOSExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonaIOSExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		510959B028BE39F100A7F035 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		510959B128BE39F100A7F035 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		510959B328BE39F100A7F035 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		510959B428BE39F100A7F035 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		510959B628BE39F100A7F035 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		510959B728BE39F100A7F035 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		510959BA28BE39F100A7F035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		510959BC28BE3A0300A7F035 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		510959BF28BE3A0300A7F035 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		510959C128BE3A0300A7F035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		510959C228BE3A0300A7F035 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		510959C828BE3A0300A7F035 /* SonaIOSExamplesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonaIOSExamplesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		510959D228BE3A0300A7F035 /* SonaIOSExamplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonaIOSExamplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		87F1532BE16292B0B5E4E96A /* Pods-SonaIOSExamples.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SonaIOSExamples.debug.xcconfig"; path = "Target Support Files/Pods-SonaIOSExamples/Pods-SonaIOSExamples.debug.xcconfig"; sourceTree = "<group>"; };
+		90C440944D590B330E395DE0 /* Pods-SonaIOSExamples.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SonaIOSExamples.release.xcconfig"; path = "Target Support Files/Pods-SonaIOSExamples/Pods-SonaIOSExamples.release.xcconfig"; sourceTree = "<group>"; };
+		B31E269C292F8BE1009D2BF2 /* CRMessageHandlerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMessageHandlerProtocol.h; sourceTree = "<group>"; };
+		B31E26A0292F9115009D2BF2 /* ChatRoomViewController+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ChatRoomViewController+Private.h"; sourceTree = "<group>"; };
+		B31E26A1292F9258009D2BF2 /* CRMicOperationHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMicOperationHandler.h; sourceTree = "<group>"; };
+		B31E26A2292F9258009D2BF2 /* CRMicOperationHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMicOperationHandler.m; sourceTree = "<group>"; };
+		B31E26A4292F926B009D2BF2 /* CRPublicScreenMessageHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPublicScreenMessageHandler.h; sourceTree = "<group>"; };
+		B31E26A5292F926B009D2BF2 /* CRPublicScreenMessageHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPublicScreenMessageHandler.m; sourceTree = "<group>"; };
+		B31E26A7292F9358009D2BF2 /* CRRewardMessageHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRRewardMessageHandler.h; sourceTree = "<group>"; };
+		B31E26A8292F9358009D2BF2 /* CRRewardMessageHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRRewardMessageHandler.m; sourceTree = "<group>"; };
+		B31E26AA292F9681009D2BF2 /* CRMessageHandlerBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMessageHandlerBase.h; sourceTree = "<group>"; };
+		B31E26AB292F9681009D2BF2 /* CRMessageHandlerBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMessageHandlerBase.m; sourceTree = "<group>"; };
+		B348B508292F651300F400B5 /* CRMessageConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMessageConstant.h; sourceTree = "<group>"; };
+		B3538C5D2934B87100ECF3F3 /* CRGiftRewardTarget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRGiftRewardTarget.h; sourceTree = "<group>"; };
+		B3538C5E2934B87100ECF3F3 /* CRGiftRewardTarget.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRGiftRewardTarget.m; sourceTree = "<group>"; };
+		B3538C602934D0EA00ECF3F3 /* ChatRoomFullScreenAnimationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatRoomFullScreenAnimationView.h; sourceTree = "<group>"; };
+		B3538C612934D0EA00ECF3F3 /* ChatRoomFullScreenAnimationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatRoomFullScreenAnimationView.m; sourceTree = "<group>"; };
+		B3538C682934D6BD00ECF3F3 /* gift_reward.apng */ = {isa = PBXFileReference; lastKnownFileType = file; path = gift_reward.apng; sourceTree = "<group>"; };
+		B3538C6A2934D89100ECF3F3 /* ChatRoomGiftImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatRoomGiftImage.h; sourceTree = "<group>"; };
+		B3538C6B2934D89100ECF3F3 /* ChatRoomGiftImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatRoomGiftImage.m; sourceTree = "<group>"; };
+		B3628C2C29408E8500AB4D5E /* ZegoLiveRoom.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ZegoLiveRoom.xcframework; path = ../../ZegoSDK/ZegoSDK/ZegoLiveRoom.xcframework; sourceTree = "<group>"; };
+		B399CC8E2923BE3700DE031B /* CRPopupView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRPopupView.h; sourceTree = "<group>"; };
+		B399CC8F2923BE3700DE031B /* CRPopupView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRPopupView.m; sourceTree = "<group>"; };
+		B3E33D262921E15E00C938E7 /* ChatRoomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatRoomViewController.h; sourceTree = "<group>"; };
+		B3E33D272921E15E00C938E7 /* ChatRoomViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatRoomViewController.m; sourceTree = "<group>"; };
+		B3E33D282921E15E00C938E7 /* ChatRoomViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomViewController.xib; sourceTree = "<group>"; };
+		B3E33D2B2921F4C000C938E7 /* CRSeatView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRSeatView.h; sourceTree = "<group>"; };
+		B3E33D2C2921F4C000C938E7 /* CRSeatView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRSeatView.m; sourceTree = "<group>"; };
+		B3E33D3729221FAF00C938E7 /* UIButton+XIB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+XIB.h"; sourceTree = "<group>"; };
+		B3E33D3829221FAF00C938E7 /* UIButton+XIB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XIB.m"; sourceTree = "<group>"; };
+		B3E33D3B292235F400C938E7 /* CRRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRRequest.h; sourceTree = "<group>"; };
+		B3E33D3C292235F400C938E7 /* CRRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRRequest.m; sourceTree = "<group>"; };
+		B3E33D3E2922363B00C938E7 /* CRRoomListRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRRoomListRequest.h; sourceTree = "<group>"; };
+		B3E33D3F2922363B00C938E7 /* CRRoomListRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRRoomListRequest.m; sourceTree = "<group>"; };
+		B3E33D412922365600C938E7 /* CRRoomInfoRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRRoomInfoRequest.h; sourceTree = "<group>"; };
+		B3E33D422922365600C938E7 /* CRRoomInfoRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRRoomInfoRequest.m; sourceTree = "<group>"; };
+		B3E33D442922366800C938E7 /* CRGiftListRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRGiftListRequest.h; sourceTree = "<group>"; };
+		B3E33D452922366800C938E7 /* CRGiftListRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRGiftListRequest.m; sourceTree = "<group>"; };
+		B3E33D472922367E00C938E7 /* CRGiftRewardRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRGiftRewardRequest.h; sourceTree = "<group>"; };
+		B3E33D482922367E00C938E7 /* CRGiftRewardRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRGiftRewardRequest.m; sourceTree = "<group>"; };
+		B3E33D4A2922369B00C938E7 /* CRMicOperationRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRMicOperationRequest.h; sourceTree = "<group>"; };
+		B3E33D4B2922369B00C938E7 /* CRMicOperationRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRMicOperationRequest.m; sourceTree = "<group>"; };
+		B3E33D4E2922390400C938E7 /* CRRoomListModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRRoomListModel.h; sourceTree = "<group>"; };
+		B3E33D4F2922390400C938E7 /* CRRoomListModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRRoomListModel.m; sourceTree = "<group>"; };
+		B3E33D542922398B00C938E7 /* CRRoomInfoResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRRoomInfoResult.h; sourceTree = "<group>"; };
+		B3E33D552922398B00C938E7 /* CRRoomInfoResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRRoomInfoResult.m; sourceTree = "<group>"; };
+		B3E33D5729223CC800C938E7 /* CRGiftModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRGiftModel.h; sourceTree = "<group>"; };
+		B3E33D5829223CC800C938E7 /* CRGiftModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRGiftModel.m; sourceTree = "<group>"; };
+		B3E33D5B292272B500C938E7 /* ChatRoomListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChatRoomListViewController.h; sourceTree = "<group>"; };
+		B3E33D5C292272B500C938E7 /* ChatRoomListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChatRoomListViewController.m; sourceTree = "<group>"; };
+		B3E33D5D292272B500C938E7 /* ChatRoomListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatRoomListViewController.xib; sourceTree = "<group>"; };
+		B3E33D652923358F00C938E7 /* CRUserCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRUserCenter.h; sourceTree = "<group>"; };
+		B3E33D662923358F00C938E7 /* CRUserCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRUserCenter.m; sourceTree = "<group>"; };
+		B3E33D6829236D1100C938E7 /* CRGiftPanel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRGiftPanel.h; sourceTree = "<group>"; };
+		B3E33D6929236D1100C938E7 /* CRGiftPanel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRGiftPanel.m; sourceTree = "<group>"; };
+		B3E33D6B29236D3500C938E7 /* CRGiftUserListView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CRGiftUserListView.h; sourceTree = "<group>"; };
+		B3E33D6C29236D3500C938E7 /* CRGiftUserListView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CRGiftUserListView.m; sourceTree = "<group>"; };
+		B3E33D6E29236E3200C938E7 /* UIColor+HEX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+HEX.h"; sourceTree = "<group>"; };
+		B3E33D6F29236E3200C938E7 /* UIColor+HEX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HEX.m"; sourceTree = "<group>"; };
+		B3E33D7129236F4D00C938E7 /* YuerGiftUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuerGiftUserCell.h; sourceTree = "<group>"; };
+		B3E33D7229236F4D00C938E7 /* YuerGiftUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YuerGiftUserCell.m; sourceTree = "<group>"; };
+		B3E33D7729237A3C00C938E7 /* YuerGiftCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YuerGiftCell.h; sourceTree = "<group>"; };
+		B3E33D7829237A3C00C938E7 /* CRGiftListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CRGiftListView.h; sourceTree = "<group>"; };
+		B3E33D7929237A3D00C938E7 /* YuerGiftCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YuerGiftCell.m; sourceTree = "<group>"; };
+		B3E33D7A29237A3D00C938E7 /* CRGiftListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CRGiftListView.m; sourceTree = "<group>"; };
+		FDDA8AEA7F4871F5131E6502 /* libPods-SonaIOSExamples.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SonaIOSExamples.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		510959AA28BE39F100A7F035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				020BA0A9B0A5EA32C7671D44 /* libPods-SonaIOSExamples.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		510959C528BE3A0300A7F035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		510959CF28BE3A0300A7F035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		510959A428BE39F100A7F035 = {
+			isa = PBXGroup;
+			children = (
+				510959AF28BE39F100A7F035 /* SonaIOSExamples */,
+				510959AE28BE39F100A7F035 /* Products */,
+				62F645E2EF34EEDC5EEAEB5B /* Pods */,
+				7467B25690A7AD34F1E3EAAC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		510959AE28BE39F100A7F035 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				510959AD28BE39F100A7F035 /* SonaIOSExamples.app */,
+				510959C828BE3A0300A7F035 /* SonaIOSExamplesTests.xctest */,
+				510959D228BE3A0300A7F035 /* SonaIOSExamplesUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		510959AF28BE39F100A7F035 /* SonaIOSExamples */ = {
+			isa = PBXGroup;
+			children = (
+				B399CC8D2923BE2400DE031B /* Common */,
+				B3E33D802923B96100C938E7 /* ChatRoom */,
+				B3E33D7F2923B95500C938E7 /* RoomList */,
+				B3E33D7E2923B94300C938E7 /* Utils */,
+				B3E33D7D2923A7DC00C938E7 /* GiftPanel */,
+				B3E33D3A292235CF00C938E7 /* Request */,
+				510959B028BE39F100A7F035 /* AppDelegate.h */,
+				510959B128BE39F100A7F035 /* AppDelegate.m */,
+				510959B328BE39F100A7F035 /* SceneDelegate.h */,
+				510959B428BE39F100A7F035 /* SceneDelegate.m */,
+				B3538C682934D6BD00ECF3F3 /* gift_reward.apng */,
+				510959B628BE39F100A7F035 /* ViewController.h */,
+				510959B728BE39F100A7F035 /* ViewController.m */,
+				510959B928BE39F100A7F035 /* Main.storyboard */,
+				510959BC28BE3A0300A7F035 /* Assets.xcassets */,
+				510959BE28BE3A0300A7F035 /* LaunchScreen.storyboard */,
+				510959C128BE3A0300A7F035 /* Info.plist */,
+				510959C228BE3A0300A7F035 /* main.m */,
+			);
+			path = SonaIOSExamples;
+			sourceTree = "<group>";
+		};
+		62F645E2EF34EEDC5EEAEB5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				87F1532BE16292B0B5E4E96A /* Pods-SonaIOSExamples.debug.xcconfig */,
+				90C440944D590B330E395DE0 /* Pods-SonaIOSExamples.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7467B25690A7AD34F1E3EAAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3628C2C29408E8500AB4D5E /* ZegoLiveRoom.xcframework */,
+				FDDA8AEA7F4871F5131E6502 /* libPods-SonaIOSExamples.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B31E269B292F8BB9009D2BF2 /* MessageHandler */ = {
+			isa = PBXGroup;
+			children = (
+				B31E269C292F8BE1009D2BF2 /* CRMessageHandlerProtocol.h */,
+				B31E26AA292F9681009D2BF2 /* CRMessageHandlerBase.h */,
+				B31E26AB292F9681009D2BF2 /* CRMessageHandlerBase.m */,
+				B31E26A1292F9258009D2BF2 /* CRMicOperationHandler.h */,
+				B31E26A2292F9258009D2BF2 /* CRMicOperationHandler.m */,
+				B31E26A4292F926B009D2BF2 /* CRPublicScreenMessageHandler.h */,
+				B31E26A5292F926B009D2BF2 /* CRPublicScreenMessageHandler.m */,
+				B31E26A7292F9358009D2BF2 /* CRRewardMessageHandler.h */,
+				B31E26A8292F9358009D2BF2 /* CRRewardMessageHandler.m */,
+			);
+			path = MessageHandler;
+			sourceTree = "<group>";
+		};
+		B3538C6D2934D8A000ECF3F3 /* Reward */ = {
+			isa = PBXGroup;
+			children = (
+				B3538C602934D0EA00ECF3F3 /* ChatRoomFullScreenAnimationView.h */,
+				B3538C612934D0EA00ECF3F3 /* ChatRoomFullScreenAnimationView.m */,
+				B3538C6A2934D89100ECF3F3 /* ChatRoomGiftImage.h */,
+				B3538C6B2934D89100ECF3F3 /* ChatRoomGiftImage.m */,
+			);
+			path = Reward;
+			sourceTree = "<group>";
+		};
+		B399CC8D2923BE2400DE031B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B348B508292F651300F400B5 /* CRMessageConstant.h */,
+				B399CC8E2923BE3700DE031B /* CRPopupView.h */,
+				B399CC8F2923BE3700DE031B /* CRPopupView.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B3E33D3A292235CF00C938E7 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				B3E33D3B292235F400C938E7 /* CRRequest.h */,
+				B3E33D3C292235F400C938E7 /* CRRequest.m */,
+				B3E33D5A29223EC600C938E7 /* MicOperation */,
+				B3E33D532922396A00C938E7 /* GiftReward */,
+				B3E33D522922396000C938E7 /* GiftList */,
+				B3E33D512922395800C938E7 /* RoomInfo */,
+				B3E33D4D292238EA00C938E7 /* RoomList */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		B3E33D4D292238EA00C938E7 /* RoomList */ = {
+			isa = PBXGroup;
+			children = (
+				B3E33D3E2922363B00C938E7 /* CRRoomListRequest.h */,
+				B3E33D3F2922363B00C938E7 /* CRRoomListRequest.m */,
+				B3E33D4E2922390400C938E7 /* CRRoomListModel.h */,
+				B3E33D4F2922390400C938E7 /* CRRoomListModel.m */,
+			);
+			path = RoomList;
+			sourceTree = "<group>";
+		};
+		B3E33D512922395800C938E7 /* RoomInfo */ = {
+			isa = PBXGroup;
+			children = (
+				B3E33D412922365600C938E7 /* CRRoomInfoRequest.h */,
+				B3E33D422922365600C938E7 /* CRRoomInfoRequest.m */,
+				B3E33D542922398B00C938E7 /* CRRoomInfoResult.h */,
+				B3E33D552922398B00C938E7 /* CRRoomInfoResult.m */,
+			);
+			path = RoomInfo;
+			sourceTree = "<group>";
+		};
+		B3E33D522922396000C938E7 /* GiftList */ = {
+			isa = PBXGroup;
+			children = (
+				B3E33D442922366800C938E7 /* CRGiftListRequest.h */,
+				B3E33D452922366800C938E7 /* CRGiftListRequest.m */,
+				B3E33D5729223CC800C938E7 /* CRGiftModel.h */,
+				B3E33D5829223CC800C938E7 /* CRGiftModel.m */,
+			);
+			path = GiftList;
+			sourceTree = "<group>";
+		};
+		B3E33D532922396A00C938E7 /* GiftReward */ = {
+			isa = PBXGroup;
+			children = (
+				B3E33D472922367E00C938E7 /* CRGiftRewardRequest.h */,
+				B3E33D482922367E00C938E7 /* CRGiftRewardRequest.m */,
+			);
+			path = GiftReward;
+			sourceTree = "<group>";
+		};
+		B3E33D5A29223EC600C938E7 /* MicOperation */ = {
+			isa = PBXGroup;
+			children = (
+				B3E33D4A2922369B00C938E7 /* CRMicOperationRequest.h */,
+				B3E33D4B2922369B00C938E7 /* CRMicOperationRequest.m */,
+			);
+			path = MicOperation;
+			sourceTree = "<group>";
+		};
+		B3E33D7D2923A7DC00C938E7 /* GiftPanel */ = {
+			isa = PBXGroup;
+			children = (
+				B3E33D6829236D1100C938E7 /* CRGiftPanel.h */,
+				B3E33D6929236D1100C938E7 /* CRGiftPanel.m */,
+				B3538C5D2934B87100ECF3F3 /* CRGiftRewardTarget.h */,
+				B3538C5E2934B87100ECF3F3 /* CRGiftRewardTarget.m */,
+				B3E33D7829237A3C00C938E7 /* CRGiftListView.h */,
+				B3E33D7A29237A3D00C938E7 /* CRGiftListView.m */,
+				B3E33D7729237A3C00C938E7 /* YuerGiftCell.h */,
+				B3E33D7929237A3D00C938E7 /* YuerGiftCell.m */,
+				B3E33D6B29236D3500C938E7 /* CRGiftUserListView.h */,
+				B3E33D6C29236D3500C938E7 /* CRGiftUserListView.m */,
+				B3E33D7129236F4D00C938E7 /* YuerGiftUserCell.h */,
+				B3E33D7229236F4D00C938E7 /* YuerGiftUserCell.m */,
+			);
+			path = GiftPanel;
+			sourceTree = "<group>";
+		};
+		B3E33D7E2923B94300C938E7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B3E33D652923358F00C938E7 /* CRUserCenter.h */,
+				B3E33D662923358F00C938E7 /* CRUserCenter.m */,
+				B3E33D3729221FAF00C938E7 /* UIButton+XIB.h */,
+				B3E33D3829221FAF00C938E7 /* UIButton+XIB.m */,
+				B3E33D6E29236E3200C938E7 /* UIColor+HEX.h */,
+				B3E33D6F29236E3200C938E7 /* UIColor+HEX.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B3E33D7F2923B95500C938E7 /* RoomList */ = {
+			isa = PBXGroup;
+			children = (
+				B3E33D5D292272B500C938E7 /* ChatRoomListViewController.xib */,
+				B3E33D5B292272B500C938E7 /* ChatRoomListViewController.h */,
+				B3E33D5C292272B500C938E7 /* ChatRoomListViewController.m */,
+			);
+			path = RoomList;
+			sourceTree = "<group>";
+		};
+		B3E33D802923B96100C938E7 /* ChatRoom */ = {
+			isa = PBXGroup;
+			children = (
+				B3538C6D2934D8A000ECF3F3 /* Reward */,
+				B31E269B292F8BB9009D2BF2 /* MessageHandler */,
+				B3E33D2B2921F4C000C938E7 /* CRSeatView.h */,
+				B3E33D2C2921F4C000C938E7 /* CRSeatView.m */,
+				B31E26A0292F9115009D2BF2 /* ChatRoomViewController+Private.h */,
+				B3E33D262921E15E00C938E7 /* ChatRoomViewController.h */,
+				B3E33D272921E15E00C938E7 /* ChatRoomViewController.m */,
+				B3E33D282921E15E00C938E7 /* ChatRoomViewController.xib */,
+			);
+			path = ChatRoom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		510959AC28BE39F100A7F035 /* SonaIOSExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 510959DC28BE3A0300A7F035 /* Build configuration list for PBXNativeTarget "SonaIOSExamples" */;
+			buildPhases = (
+				AE2D459E44C2CE815E42F5F3 /* [CP] Check Pods Manifest.lock */,
+				510959A928BE39F100A7F035 /* Sources */,
+				510959AA28BE39F100A7F035 /* Frameworks */,
+				510959AB28BE39F100A7F035 /* Resources */,
+				FA95FA0375E5C5802F1C0134 /* [CP] Embed Pods Frameworks */,
+				DEC6A13DB12C39EBA43C83E7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SonaIOSExamples;
+			productName = SonaIOSExamples;
+			productReference = 510959AD28BE39F100A7F035 /* SonaIOSExamples.app */;
+			productType = "com.apple.product-type.application";
+		};
+		510959C728BE3A0300A7F035 /* SonaIOSExamplesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 510959DF28BE3A0300A7F035 /* Build configuration list for PBXNativeTarget "SonaIOSExamplesTests" */;
+			buildPhases = (
+				510959C428BE3A0300A7F035 /* Sources */,
+				510959C528BE3A0300A7F035 /* Frameworks */,
+				510959C628BE3A0300A7F035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				510959CA28BE3A0300A7F035 /* PBXTargetDependency */,
+			);
+			name = SonaIOSExamplesTests;
+			productName = SonaIOSExamplesTests;
+			productReference = 510959C828BE3A0300A7F035 /* SonaIOSExamplesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		510959D128BE3A0300A7F035 /* SonaIOSExamplesUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 510959E228BE3A0300A7F035 /* Build configuration list for PBXNativeTarget "SonaIOSExamplesUITests" */;
+			buildPhases = (
+				510959CE28BE3A0300A7F035 /* Sources */,
+				510959CF28BE3A0300A7F035 /* Frameworks */,
+				510959D028BE3A0300A7F035 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				510959D428BE3A0300A7F035 /* PBXTargetDependency */,
+			);
+			name = SonaIOSExamplesUITests;
+			productName = SonaIOSExamplesUITests;
+			productReference = 510959D228BE3A0300A7F035 /* SonaIOSExamplesUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		510959A528BE39F100A7F035 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					510959AC28BE39F100A7F035 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					510959C728BE3A0300A7F035 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 510959AC28BE39F100A7F035;
+					};
+					510959D128BE3A0300A7F035 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 510959AC28BE39F100A7F035;
+					};
+				};
+			};
+			buildConfigurationList = 510959A828BE39F100A7F035 /* Build configuration list for PBXProject "SonaIOSExamples" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 510959A428BE39F100A7F035;
+			productRefGroup = 510959AE28BE39F100A7F035 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				510959AC28BE39F100A7F035 /* SonaIOSExamples */,
+				510959C728BE3A0300A7F035 /* SonaIOSExamplesTests */,
+				510959D128BE3A0300A7F035 /* SonaIOSExamplesUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		510959AB28BE39F100A7F035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3538C692934D6BD00ECF3F3 /* gift_reward.apng in Resources */,
+				510959C028BE3A0300A7F035 /* LaunchScreen.storyboard in Resources */,
+				510959BD28BE3A0300A7F035 /* Assets.xcassets in Resources */,
+				510959BB28BE39F100A7F035 /* Main.storyboard in Resources */,
+				B3E33D2A2921E15E00C938E7 /* ChatRoomViewController.xib in Resources */,
+				B3E33D5F292272B500C938E7 /* ChatRoomListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		510959C628BE3A0300A7F035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		510959D028BE3A0300A7F035 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AE2D459E44C2CE815E42F5F3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SonaIOSExamples-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEC6A13DB12C39EBA43C83E7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SonaIOSExamples/Pods-SonaIOSExamples-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SonaIOSExamples/Pods-SonaIOSExamples-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SonaIOSExamples/Pods-SonaIOSExamples-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA95FA0375E5C5802F1C0134 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SonaIOSExamples/Pods-SonaIOSExamples-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SonaIOSExamples/Pods-SonaIOSExamples-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SonaIOSExamples/Pods-SonaIOSExamples-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		510959A928BE39F100A7F035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B31E26A6292F926B009D2BF2 /* CRPublicScreenMessageHandler.m in Sources */,
+				510959B828BE39F100A7F035 /* ViewController.m in Sources */,
+				B3E33D7329236F4D00C938E7 /* YuerGiftUserCell.m in Sources */,
+				B3E33D3929221FAF00C938E7 /* UIButton+XIB.m in Sources */,
+				B3E33D7B29237A3D00C938E7 /* YuerGiftCell.m in Sources */,
+				B3E33D402922363B00C938E7 /* CRRoomListRequest.m in Sources */,
+				B3538C6C2934D89100ECF3F3 /* ChatRoomGiftImage.m in Sources */,
+				B3E33D5E292272B500C938E7 /* ChatRoomListViewController.m in Sources */,
+				510959B228BE39F100A7F035 /* AppDelegate.m in Sources */,
+				B3E33D4C2922369B00C938E7 /* CRMicOperationRequest.m in Sources */,
+				510959C328BE3A0300A7F035 /* main.m in Sources */,
+				B3E33D7C29237A3D00C938E7 /* CRGiftListView.m in Sources */,
+				B31E26A9292F9358009D2BF2 /* CRRewardMessageHandler.m in Sources */,
+				B3E33D3D292235F400C938E7 /* CRRequest.m in Sources */,
+				B3E33D502922390400C938E7 /* CRRoomListModel.m in Sources */,
+				B31E26AC292F9681009D2BF2 /* CRMessageHandlerBase.m in Sources */,
+				B3E33D5929223CC800C938E7 /* CRGiftModel.m in Sources */,
+				B3E33D7029236E3200C938E7 /* UIColor+HEX.m in Sources */,
+				B3E33D672923358F00C938E7 /* CRUserCenter.m in Sources */,
+				510959B528BE39F100A7F035 /* SceneDelegate.m in Sources */,
+				B3E33D6D29236D3500C938E7 /* CRGiftUserListView.m in Sources */,
+				B3538C5F2934B87100ECF3F3 /* CRGiftRewardTarget.m in Sources */,
+				B3538C622934D0EA00ECF3F3 /* ChatRoomFullScreenAnimationView.m in Sources */,
+				B3E33D432922365600C938E7 /* CRRoomInfoRequest.m in Sources */,
+				B3E33D462922366800C938E7 /* CRGiftListRequest.m in Sources */,
+				B3E33D492922367E00C938E7 /* CRGiftRewardRequest.m in Sources */,
+				B3E33D6A29236D1100C938E7 /* CRGiftPanel.m in Sources */,
+				B399CC902923BE3700DE031B /* CRPopupView.m in Sources */,
+				B31E26A3292F9258009D2BF2 /* CRMicOperationHandler.m in Sources */,
+				B3E33D2D2921F4C000C938E7 /* CRSeatView.m in Sources */,
+				B3E33D562922398B00C938E7 /* CRRoomInfoResult.m in Sources */,
+				B3E33D292921E15E00C938E7 /* ChatRoomViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		510959C428BE3A0300A7F035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		510959CE28BE3A0300A7F035 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		510959CA28BE3A0300A7F035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 510959AC28BE39F100A7F035 /* SonaIOSExamples */;
+			targetProxy = 510959C928BE3A0300A7F035 /* PBXContainerItemProxy */;
+		};
+		510959D428BE3A0300A7F035 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 510959AC28BE39F100A7F035 /* SonaIOSExamples */;
+			targetProxy = 510959D328BE3A0300A7F035 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		510959B928BE39F100A7F035 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				510959BA28BE39F100A7F035 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		510959BE28BE3A0300A7F035 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				510959BF28BE3A0300A7F035 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		510959DA28BE3A0300A7F035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		510959DB28BE3A0300A7F035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		510959DD28BE3A0300A7F035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87F1532BE16292B0B5E4E96A /* Pods-SonaIOSExamples.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4ZLTG8S2GS;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mercury-ios/iOS_release_for_MercuryFramework",
+					"$(PROJECT_DIR)/mercury-ios/MercurySocket/iOS",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/MercuryService\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SonaAudio\"",
+					"\"${PODS_ROOT}/Headers/Public/SonaRoom\"",
+					"\"${PODS_ROOT}/Headers/Public/YppAudioPrep\"",
+					"${PODS_ROOT}/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional.framework/Headers/",
+				);
+				INFOPLIST_FILE = SonaIOSExamples/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "“Sona”想访问你的麦克风，为了帮你实现视频聊天、语音聊天、发送语音消息及聊天室内使用你的麦克风等功能";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sona.SonaIOSExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		510959DE28BE3A0300A7F035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90C440944D590B330E395DE0 /* Pods-SonaIOSExamples.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/mercury-ios/iOS_release_for_MercuryFramework",
+					"$(PROJECT_DIR)/mercury-ios/MercurySocket/iOS",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/AFNetworking\"",
+					"\"${PODS_ROOT}/Headers/Public/MJExtension\"",
+					"\"${PODS_ROOT}/Headers/Public/MercuryService\"",
+					"\"${PODS_ROOT}/Headers/Public/ReactiveCocoa\"",
+					"\"${PODS_ROOT}/Headers/Public/SDWebImage\"",
+					"\"${PODS_ROOT}/Headers/Public/SonaAudio\"",
+					"\"${PODS_ROOT}/Headers/Public/SonaRoom\"",
+					"\"${PODS_ROOT}/Headers/Public/YppAudioPrep\"",
+					"${PODS_ROOT}/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional/TXLiteAVSDK_Professional.framework/Headers/",
+				);
+				INFOPLIST_FILE = SonaIOSExamples/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "“Sona”想访问你的麦克风，为了帮你实现视频聊天、语音聊天、发送语音消息及聊天室内使用你的麦克风等功能";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sona.SonaIOSExamples;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		510959E028BE3A0300A7F035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sona.SonaIOSExamplesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SonaIOSExamples.app/SonaIOSExamples";
+			};
+			name = Debug;
+		};
+		510959E128BE3A0300A7F035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sona.SonaIOSExamplesTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SonaIOSExamples.app/SonaIOSExamples";
+			};
+			name = Release;
+		};
+		510959E328BE3A0300A7F035 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sona.SonaIOSExamplesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SonaIOSExamples;
+			};
+			name = Debug;
+		};
+		510959E428BE3A0300A7F035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sona.SonaIOSExamplesUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SonaIOSExamples;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		510959A828BE39F100A7F035 /* Build configuration list for PBXProject "SonaIOSExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				510959DA28BE3A0300A7F035 /* Debug */,
+				510959DB28BE3A0300A7F035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		510959DC28BE3A0300A7F035 /* Build configuration list for PBXNativeTarget "SonaIOSExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				510959DD28BE3A0300A7F035 /* Debug */,
+				510959DE28BE3A0300A7F035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		510959DF28BE3A0300A7F035 /* Build configuration list for PBXNativeTarget "SonaIOSExamplesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				510959E028BE3A0300A7F035 /* Debug */,
+				510959E128BE3A0300A7F035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		510959E228BE3A0300A7F035 /* Build configuration list for PBXNativeTarget "SonaIOSExamplesUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				510959E328BE3A0300A7F035 /* Debug */,
+				510959E428BE3A0300A7F035 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 510959A528BE39F100A7F035 /* Project object */;
+}
